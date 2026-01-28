@@ -19,14 +19,11 @@ def scrape():
     
     try:
         driver.get("https://survev.io/")
-        
         wait = WebDriverWait(driver, 20)
         select_element = wait.until(EC.presence_of_element_located((By.ID, "server-select-main")))
-        
         time.sleep(5)
         
         options = select_element.find_elements(By.TAG_NAME, "option")
-        
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         data_rows = []
         
@@ -36,18 +33,17 @@ def scrape():
                 server_name = text.split("[")[0].strip()
                 player_count = text.split("[")[1].split("]")[0].replace(" players", "").strip()
                 data_rows.append([timestamp, server_name, player_count])
-        
-        file_exists = False
-        try:
-            with open("servers.csv", "r") as f:
-                file_exists = True
-        except FileNotFoundError:
-            file_exists = False
-            
-        with open("servers.csv", "a", newline="") as f:
+
+        with open("latest.csv", "w", newline="") as f:
             writer = csv.writer(f)
-            if not file_exists:
-                writer.writerow(["Timestamp", "Server", "Players"])
+            writer.writerow(["Timestamp", "Server", "Players"])
+            writer.writerows(data_rows)
+
+        with open("old.csv", "a", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow([])
+            writer.writerow([f"--- RUN AT {timestamp} ---"])
+            writer.writerow(["Timestamp", "Server", "Players"])
             writer.writerows(data_rows)
             
         for row in data_rows:
