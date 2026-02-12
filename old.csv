@@ -4447,3 +4447,11 @@ Timestamp,Server,Players
 2026-02-12 16:03:21,Russia,24
 2026-02-12 16:03:21,Asia,108
 2026-02-12 16:03:21,South America,28
+
+--- RUN AT 2026-02-12 17:07:47 ---
+Timestamp,Server,Players
+2026-02-12 17:07:47,North America,355
+2026-02-12 17:07:47,Europe,181
+2026-02-12 17:07:47,Russia,27
+2026-02-12 17:07:47,Asia,54
+2026-02-12 17:07:47,South America,33
