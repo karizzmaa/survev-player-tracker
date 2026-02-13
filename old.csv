@@ -4583,3 +4583,11 @@ Timestamp,Server,Players
 2026-02-13 06:40:05,Russia,12
 2026-02-13 06:40:05,Asia,132
 2026-02-13 06:40:05,South America,5
+
+--- RUN AT 2026-02-13 07:35:41 ---
+Timestamp,Server,Players
+2026-02-13 07:35:41,North America,122
+2026-02-13 07:35:41,Europe,49
+2026-02-13 07:35:41,Russia,12
+2026-02-13 07:35:41,Asia,144
+2026-02-13 07:35:41,South America,9
