@@ -5698,3 +5698,11 @@ Timestamp,Server,Players
 2026-02-16 14:13:23,Russia,28
 2026-02-16 14:13:23,Asia,141
 2026-02-16 14:13:23,South America,26
+
+--- RUN AT 2026-02-16 15:00:00 ---
+Timestamp,Server,Players
+2026-02-16 15:00:00,North America,195
+2026-02-16 15:00:00,Europe,155
+2026-02-16 15:00:00,Russia,30
+2026-02-16 15:00:00,Asia,148
+2026-02-16 15:00:00,South America,26
