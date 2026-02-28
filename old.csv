@@ -9178,3 +9178,11 @@ Timestamp,Server,Players
 2026-02-28 17:14:31,Russia,21
 2026-02-28 17:14:31,Asia,43
 2026-02-28 17:14:31,South America,26
+
+--- RUN AT 2026-02-28 17:35:06 ---
+Timestamp,Server,Players
+2026-02-28 17:35:06,North America,287
+2026-02-28 17:35:06,Europe,122
+2026-02-28 17:35:06,Russia,24
+2026-02-28 17:35:06,Asia,46
+2026-02-28 17:35:06,South America,29
